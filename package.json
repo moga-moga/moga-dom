@@ -1,0 +1,24 @@
+{
+  "name": "moga-dom",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/js/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moga-moga/moga-dom.git"
+  },
+  "author": "Akira Mineshima",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/moga-moga/moga-dom/issues"
+  },
+  "homepage": "https://github.com/moga-moga/moga-dom#readme",
+  "devDependencies": {
+    "@types/jquery": "^3.3.29",
+    "typescript": "^3.2.4"
+  }
+}
