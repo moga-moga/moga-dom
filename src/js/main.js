@@ -6,6 +6,8 @@ var ul_1 = require("./dom/ul");
 var li_1 = require("./dom/li");
 var text_1 = require("./dom/text");
 var button_1 = require("./dom/button");
+var select_1 = require("./dom/select");
+var option_1 = require("./dom/option");
 var getDivDom = function (classes, id) {
     if (classes === void 0) { classes = undefined; }
     if (id === void 0) { id = undefined; }
@@ -46,3 +48,17 @@ var getButtonDom = function (value, classes, id, name) {
     return (new button_1.MogaButtonDom(value, classes, id, name)).getDom();
 };
 exports.getButtonDom = getButtonDom;
+var getSelectDom = function (classes, id, name) {
+    if (classes === void 0) { classes = undefined; }
+    if (id === void 0) { id = undefined; }
+    if (name === void 0) { name = undefined; }
+    return (new select_1.MogaSelectDom(classes, id, name)).getDom();
+};
+exports.getSelectDom = getSelectDom;
+var getOptionDom = function (value, classes, id) {
+    if (value === void 0) { value = undefined; }
+    if (classes === void 0) { classes = undefined; }
+    if (id === void 0) { id = undefined; }
+    return (new option_1.MogaOptionDom(value, classes, id)).getDom();
+};
+exports.getOptionDom = getOptionDom;

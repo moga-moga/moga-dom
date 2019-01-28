@@ -4,6 +4,8 @@ import { MogaUlDom } from "./dom/ul";
 import { MogaLiDom } from "./dom/li";
 import { MogaTextDom } from "./dom/text";
 import { MogaButtonDom } from "./dom/button";
+import { MogaSelectDom } from "./dom/select"
+import { MogaOptionDom } from "./dom/option";
 
 const getDivDom = (classes = undefined, id = undefined) => {
     return (new MogaDivDom(classes, id)).getDom();
@@ -25,7 +27,16 @@ const getButtonDom = (value = undefined, classes = undefined, id = undefined, na
     return (new MogaButtonDom(value, classes, id, name)).getDom();
 }
 
+const getSelectDom = (classes = undefined, id = undefined, name = undefined) => {
+    return (new MogaSelectDom(classes, id, name)).getDom();
+}
+
+const getOptionDom = (value = undefined, classes = undefined, id = undefined) => {
+    return (new MogaOptionDom(value, classes, id)).getDom()
+}
+
 export {
     getDivDom, getSpanDom, getUlDom, getLiDom,
     getTextDom, getButtonDom,
+    getSelectDom, getOptionDom
 }
