@@ -4,10 +4,16 @@ var div_1 = require("./dom/div");
 var span_1 = require("./dom/span");
 var ul_1 = require("./dom/ul");
 var li_1 = require("./dom/li");
+var table_1 = require("./dom/table");
+var td_1 = require("./dom/td");
+var th_1 = require("./dom/th");
+var tr_1 = require("./dom/tr");
+var i_1 = require("./dom/i");
 var text_1 = require("./dom/text");
 var button_1 = require("./dom/button");
 var select_1 = require("./dom/select");
 var option_1 = require("./dom/option");
+var checkbox_1 = require("./dom/checkbox");
 var getDivDom = function (classes, id) {
     if (classes === void 0) { classes = undefined; }
     if (id === void 0) { id = undefined; }
@@ -32,6 +38,36 @@ var getLiDom = function (classes, id) {
     return (new li_1.MogaLiDom(classes, id)).getDom();
 };
 exports.getLiDom = getLiDom;
+var getTableDom = function (classes, id) {
+    if (classes === void 0) { classes = undefined; }
+    if (id === void 0) { id = undefined; }
+    return (new table_1.MogaTableDom(classes, id)).getDom();
+};
+exports.getTableDom = getTableDom;
+var getTdDom = function (classes, id) {
+    if (classes === void 0) { classes = undefined; }
+    if (id === void 0) { id = undefined; }
+    return (new td_1.MogaTdDom(classes, id)).getDom();
+};
+exports.getTdDom = getTdDom;
+var getThDom = function (classes, id) {
+    if (classes === void 0) { classes = undefined; }
+    if (id === void 0) { id = undefined; }
+    return (new th_1.MogaThDom(classes, id)).getDom();
+};
+exports.getThDom = getThDom;
+var getTrDom = function (classes, id) {
+    if (classes === void 0) { classes = undefined; }
+    if (id === void 0) { id = undefined; }
+    return (new tr_1.MogaTrDom(classes, id)).getDom();
+};
+exports.getTrDom = getTrDom;
+var getIDom = function (classes, id) {
+    if (classes === void 0) { classes = undefined; }
+    if (id === void 0) { id = undefined; }
+    return (new i_1.MogaIDom(classes, id)).getDom();
+};
+exports.getIDom = getIDom;
 var getTextDom = function (value, classes, id, name) {
     if (value === void 0) { value = undefined; }
     if (classes === void 0) { classes = undefined; }
@@ -62,3 +98,10 @@ var getOptionDom = function (value, classes, id) {
     return (new option_1.MogaOptionDom(value, classes, id)).getDom();
 };
 exports.getOptionDom = getOptionDom;
+var getCheckboxDom = function (checked, classes, id) {
+    if (checked === void 0) { checked = false; }
+    if (classes === void 0) { classes = undefined; }
+    if (id === void 0) { id = undefined; }
+    return (new checkbox_1.MogaCheckboxDom(checked, classes, id)).getDom();
+};
+exports.getCheckboxDom = getCheckboxDom;
